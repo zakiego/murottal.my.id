@@ -14,6 +14,7 @@ export const SocialIcon = ({
 }) => {
   if (href == null) return null;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const components: any = {
     telegram: telegram,
     youtube: youtube,
