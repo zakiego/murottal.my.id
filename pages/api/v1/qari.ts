@@ -11,5 +11,10 @@ export default async function qariAPI(
     .select("id, name, name_ar, image, social")
     .order("name", { ascending: true });
 
+  if (error) {
+    console.log(error);
+    return res.status(200).json({ error: true });
+  }
+
   res.status(200).json(data);
 }
