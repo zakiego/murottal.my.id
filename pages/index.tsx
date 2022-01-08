@@ -2,7 +2,7 @@ import { Navbar, QariCard, Saran } from "~/components";
 import { QariType } from "~/lib/qari";
 
 export async function getServerSideProps() {
-  const data = await fetch("http://murottal.my.id/api/v1/qari").then((resp) =>
+  const data = await fetch("https://murottal.my.id/api/v1/qari").then((resp) =>
     resp.json(),
   );
 

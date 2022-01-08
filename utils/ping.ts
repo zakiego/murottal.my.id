@@ -6,7 +6,7 @@ export default async function Ping({
   type: string;
 }) {
   console.log(qari_id);
-  const { error } = await fetch("http://murottal.my.id/api/v1/ping", {
+  const { error } = await fetch("https://murottal.my.id/api/v1/ping", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
