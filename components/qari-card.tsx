@@ -24,6 +24,7 @@ export const QariCard = ({ data }: { data: QariType[] }) => {
                   className="rounded-full md:scale-100"
                   height={200}
                   width={200}
+                  quality={50}
                   src={qari.image}
                   alt={qari.name}
                 />
