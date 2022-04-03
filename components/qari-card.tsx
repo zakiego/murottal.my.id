@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import type { QariType } from "~/lib/qari";
-import Ping from "~/utils/ping";
 
 import { SocialIcon } from ".";
 
@@ -18,9 +17,6 @@ export const QariCard = ({ data }: { data: QariType[] }) => {
             <div className="text-center">
               <a href={qari.social?.youtube}>
                 <Image
-                  onClick={async () =>
-                    await Ping({ qari_id: qari.id.toString(), type: "photo" })
-                  }
                   className="rounded-full md:scale-100"
                   height={200}
                   width={200}

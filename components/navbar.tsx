@@ -13,7 +13,7 @@ export const Navbar = () => {
           </Link>
         </h1>
         <p className="text-sm md:text-lg font-medium text-[#6C7380]">
-          Temukan qari kesukaanmu
+          Temukan qari favoritmu
         </p>
       </div>
       <div>

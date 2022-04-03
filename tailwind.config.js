@@ -8,11 +8,15 @@ module.exports = {
       colors: {
         "black-smooth": "#111827",
         "black-fade": "#6B7280",
+        primary: "#002884",
       },
       boxShadow: {
         card: "-10px 48px 140px 0px rgba(126,123,160,0.2)",
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
