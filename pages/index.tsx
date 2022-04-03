@@ -3,9 +3,7 @@ import SEO from "~/components/seo";
 import { QariType } from "~/lib/qari";
 
 export async function getStaticProps() {
-  const url = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+  const url = process.env.NEXT_URL;
 
   const data = await fetch(`${url}/api/v1/qari`).then((resp) => resp.json());
 
