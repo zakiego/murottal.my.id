@@ -1,4 +1,5 @@
-import { Navbar, QariCard, Saran } from "~/components";
+import { QariCard, Saran } from "~/components";
+import Layout from "~/components/layout";
 import SEO from "~/components/seo";
 import { QariType } from "~/lib/qari";
 
@@ -20,12 +21,9 @@ export async function getStaticProps() {
 
 export default function Index({ data }: { data: QariType[] }) {
   return (
-    <div className="min-h-screen px-6 md:px-11 lg:px-16 py-7 md:py-14 from-white via-white to-[#EBF0FE] bg-gradient-to-br">
+    <Layout>
       <SEO />
       <body>
-        <nav>
-          <Navbar />
-        </nav>
         <div className="mt-4">
           <Saran />
         </div>
@@ -33,6 +31,6 @@ export default function Index({ data }: { data: QariType[] }) {
           <QariCard data={data} />
         </main>
       </body>
-    </div>
+    </Layout>
   );
 }
