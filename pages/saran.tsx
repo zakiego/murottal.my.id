@@ -49,11 +49,11 @@ export default function Saran() {
             placeholder="Tulis nama qari atau channel youtube yang ingin Anda sarankan"
             onChange={(e) => setInput(e.target.value)}
             rows={6}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary/70 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="text-sm md:text-lg mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary/70 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
           <button
             onClick={() => sendMessage()}
-            className="mt-5 rounded-lg bg-primary/70  hover:bg-primary/80 px-4 py-2 text-white"
+            className="text-sm md:text-lg mt-5 rounded-lg bg-primary/70  hover:bg-primary/80 px-4 py-2 text-white"
           >
             Kirim Saran
           </button>
