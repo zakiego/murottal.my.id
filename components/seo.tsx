@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo";
 export default function SEO() {
   const meta = {
     title: "Kumpulan Murottal",
-    description: "Temukan qari kesukaanmu",
+    description: "Temukan qari favoritmu",
     creator: "@zakiego",
     url: "https://murottal.my.id",
     image:
